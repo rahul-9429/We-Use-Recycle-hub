@@ -8,6 +8,7 @@ import {
   getDocs,
 } from "firebase/firestore";
 import Agent_cards from "./Agent_cards";
+import Nav from "./navBar";
 
 export function Agents() {
   const { state } = useLocation();
@@ -33,6 +34,8 @@ export function Agents() {
   }, [selectedCity]);
 
   return (
+    <>
+    <Nav/>
     <div>
          <center className="mt-12 cardfont"><h1>Agents in {selectedCity}</h1></center>
       <ul className="">
@@ -41,5 +44,6 @@ export function Agents() {
         ))}
       </ul>
     </div>
+    </>
   );
 }

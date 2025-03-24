@@ -11,15 +11,15 @@ export default function Nav() {
     };
 
     return (
-        <header className="bg-transparent shadow-md px-6 py-4 flex justify-between items-center md:px-16">
-            <div className="text-xl font-bold">
+        
+        <header className="bg-transparent shadow-md px-6 py-4 flex justify-between items-center  Z-50 ">
+            <div className="text-xl font-bold ">
                 <Link to="/home">WeUse</Link>
             </div>
             
             <nav className="hidden md:flex gap-6 font-bold text-xl">
                 <Link to="/home" className="text-green-400 hover:bg-emerald-400/90 hover:text-white px-4 py-2 transition-all duration-100 rounded-full">Home</Link>
                 <Link to="/bys" className="text-green-400 hover:bg-emerald-400/90 hover:text-white px-4 py-2 transition-all duration-100 rounded-full">Book a Slot</Link>
-
                 <Link to="/How_we_work" className="text-green-400 hover:bg-emerald-400/90 hover:text-white px-4 transition-all duration-100 py-2 rounded-full">About Us</Link>
                 <Link to="/user-acc" className="text-green-400 hover:bg-emerald-400/90 hover:text-white px-3 py-2 transition-all duration-100 rounded-full"><User/></Link>
             </nav>

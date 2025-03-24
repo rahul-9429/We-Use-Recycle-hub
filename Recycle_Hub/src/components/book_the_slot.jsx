@@ -5,6 +5,7 @@ import delhi from "../assets/Delhi.jpg";
 import hyderabad from "../assets/HYD.jpg";
 import maharashtra from "../assets/MAH.jpg";
 import vizag from "../assets/VIZAG.jpg";
+import Nav from "./navBar";
 
 export default function SlotBook() {
     const [cities, setCities] = useState([]);
@@ -35,6 +36,8 @@ export default function SlotBook() {
     };
 
     return (
+        <>
+        <Nav/>
         <div className="h-screen max-w-screen flex flex-col md:mt-5">
             <div className="flex flex-col items-center justify-center w-full">
                 <h2
@@ -71,5 +74,6 @@ export default function SlotBook() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

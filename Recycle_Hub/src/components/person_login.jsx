@@ -80,7 +80,7 @@ export default function Login() {
           <input
             id="email"
             type="email"
-            placeholder="bharamaramba@gmail.com"
+            placeholder="person@gmail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="border border-black w-full pr-10 md:pr-10 px-4 py-2 rounded-md"
@@ -93,7 +93,7 @@ export default function Login() {
         <input
           id="password"
           type="password"
-          placeholder="Bhrama@0"
+          placeholder="person@0"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           className="border  border-black w-full md:px-4 py-2  rounded-md pl-3"

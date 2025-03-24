@@ -59,7 +59,7 @@ function App() {
 
         return (
                 <BrowserRouter>
-                        {isLoggedIn && <Nav />}
+                        {isLoggedIn}
                         <RouteTransition>
                                 <Routes>
                                         <Route path="/" element={<Landing />} />
@@ -81,6 +81,7 @@ function App() {
                                 </Routes>
                         </RouteTransition>
                 </BrowserRouter>
+                
         );
 }
 
