@@ -46,6 +46,13 @@
                 
             }
         };
+        function logout() {
+                auth.signOut().then(() => {
+                    navigate("/");
+                }).catch((error) => {
+                    console.error("Error signing out: ", error);
+                });
+            }
         const handleImageChange = async (e) => {
             const file = e.target.files[0];
             if (file) {
@@ -144,7 +151,7 @@
                         <button className="text-xl italic bg-green-400 text-black w-1/4 h-fit rounded-md" onClick={handleEditAddress}><i className='bx bx-edit'></i></button>
                     </div>
                 
-
+                <button className="bg-green-400 rounded-md w-1/3 text-sm md:text-xl md:w-full text-nowrap py-1 px-2 hover:bg-green-300 hidden md:block" onClick={logout}>Log Out</button>
                 </div>
             </div>
         );

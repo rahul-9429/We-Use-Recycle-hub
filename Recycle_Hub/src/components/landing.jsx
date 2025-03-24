@@ -64,23 +64,17 @@ return (
                 />
             </svg>
             <div className="shadows">
-                <span>R</span>
-                <span>E</span>
-                <span>C</span>
-                <span>Y</span>
-                <span>C</span>
-                <span>L</span>
+                <span>W</span>
                 <span>E</span>
                 <span>-</span>
-                <span></span>    
-                <span>H</span>
                 <span>U</span>
-                <span>B</span>
+                <span>S</span>
+                <span>E</span>
             </div>
                
-        <div className="flex justify-center mt-12 border w-1/4 md:w-1/6 rounded-md border-black get_started">
+        <div className="flex justify-center mt-12 border w-1/4 md:w-1/6 text-green-700 hover:text-white rounded-full border-black get_started">
         <Link  onClick={handleClick}>
-            <button className="md:text-2xl text-md">Get Started</button>
+            <button className="md:text-2xl font-bold text-md py-2">Get Started</button>
         </Link>
         </div>
         </div>
